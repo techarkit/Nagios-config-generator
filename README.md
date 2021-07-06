@@ -10,10 +10,10 @@ Generate Nagios core configuration in few minutes, i would say you can generate 
 2. Verify NSClient is reporting properly from Nagios Core Server
 3. Define the check_nt command and update the NSClient password in commands.cfg file.
 
-`define command {
- -   command_name check_nt
- -  command_line  $USER1$/check_nt -H $HOSTADDRESS$ -p 12489 -v $ARG1$ $ARG2$ -s secret
-    } `
+``define command {
+    command_name check_nt
+    command_line  $USER1$/check_nt -H $HOSTADDRESS$ -p 12489 -v $ARG1$ $ARG2$ -s secret
+    } ``
     
 4. Create required contacts and contact_groups in contacts.cfg (who will receive notifications).
 5. Update Template-Windows.cfg and Drives.cfg files
