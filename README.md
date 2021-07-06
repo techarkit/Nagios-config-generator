@@ -6,4 +6,4 @@ Generate Nagios core configuration in few minutes, i would say you can generate 
 
 # How to Generate ?
 
-sh generate_win_host_config.sh
+```sh generate_win_host_config.sh```
